@@ -17,19 +17,16 @@ def initializer(inputPhrase):
                 phrase = phrase[:i] + "+" + phrase[i + 2:]
                 isChangeApplied = True
 
-                i += 1
+
             elif phrase[i] == '-' and phrase[i + 1] == '+':
                 phrase = phrase[:i] + '-' + phrase[i + 2:]
                 isChangeApplied = True
 
-                i += 1
+
             elif phrase[i] == '+' and phrase[i + 1] == '+':
                 phrase = phrase[:i] + '+' + phrase[i + 2:]
                 isChangeApplied = True
-
-                i += 1
-
-            else: i += 1
+            i += 1
 
     return phrase
 
